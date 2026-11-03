@@ -1,0 +1,81 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Campus Route Optimizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Smart Campus Route Optimizer</h1>
+            <p>Find the smartest route across your campus</p>
+        </header>
+
+        <section class="card">
+            <h2>Find Shortest Route</h2>
+
+            <label for="source">Starting Location</label>
+            <select id="source"></select>
+
+            <label for="destination">Destination</label>
+            <select id="destination"></select>
+
+            <button id="findRouteBtn">Find Shortest Route</button>
+
+            <div id="routeResult"></div>
+        </section>
+
+        <section class="card">
+            <h2>Search Campus Location</h2>
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Type a location name..."
+            >
+            <div id="searchResults"></div>
+        </section>
+
+        <section class="card">
+            <h2>Nearest Location</h2>
+            <label for="nearestSource">Select Starting Location</label>
+            <select id="nearestSource"></select>
+            <button id="nearestBtn">Find Nearest Location</button>
+            <div id="nearestResult"></div>
+        </section>
+
+        <section class="card">
+            <h2>Block / Unblock Road</h2>
+
+            <label for="roadSource">First Location</label>
+            <select id="roadSource"></select>
+
+            <label for="roadDestination">Second Location</label>
+            <select id="roadDestination"></select>
+
+            <button id="blockBtn">Block Road</button>
+            <button id="unblockBtn">Unblock Road</button>
+
+            <div id="roadMessage"></div>
+        </section>
+
+        <section class="card">
+            <h2>Route History</h2>
+            <button id="historyBtn">View Route History</button>
+            <button id="clearHistoryBtn">Clear History</button>
+            <div id="historyResult"></div>
+        </section>
+
+        <footer>
+            <p>Powered by C++ and WebAssembly</p>
+        </footer>
+    </div>
+
+    <script src="campus.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
